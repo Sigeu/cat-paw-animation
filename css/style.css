@@ -1,0 +1,92 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #d0d0d0;
+}
+
+#container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	opacity: 1;
+}
+
+#container button {
+	color: #666;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 2px solid #ff8700;
+	background-color: #ffbc00;
+	cursor: pointer;
+}
+
+#container button:hover {
+	color: #333;
+	border: 2px solid #ff870080;
+	background-color: #ffbc0080;
+}
+
+#playground {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#close {
+	display: none;
+	position: absolute;
+	left: calc(50vw - 25px);
+	bottom: 50px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #202124;
+	border-radius: 25px;
+	background-color: #dadce0;
+}
+
+.cat-paws {
+	position: absolute;
+	width: 325px;
+	height: 1250px;
+	transform-origin: 162.5px 62.5px;
+}
+
+.paw-prints {
+	position: absolute;
+	width: 125px;
+	height: 125px;
+}
+
+#wave {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 0vh;
+	background-color: #d0d0d0;
+	background-image: linear-gradient(to top, #fff0 0, #86c6f0 26px, #fff0), url("../images/wave.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+@keyframes wave {
+	0% {
+		height: 0vh;
+	}
+    100% {
+		height: calc(100vh + 26px);
+	}
+}
